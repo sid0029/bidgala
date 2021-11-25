@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="css/index.css" rel='stylesheet'>
+  <title>Movie Search interface</title>
+
+</head>
+
+<body>
+
+<div class ="container">
+<h1 class="text-center mt-5">Movie Search interface</h1>
+<form id="movieform" autocomplete="off">
+<div class="form-group">
+<input class="form-control" type="text" id="movie" placeholder="Movie...">
+
+</div>
+<div class ="form-group">
+  <button class = "btn btn-danger btn-block">
+   Search Movie
+  </button>
+
+</div>
+
+</form>
+
+<div class="cards-searchlist">
+  <h2>searchlist</h2>
+  <div class="row">
+      <div class="column">
+          <div class="card">
+          <div id="searchresults"></div>
+          </div>
+      </div>
+   </div>
+</div>
+<div class="cards-watchlist">
+  <h2>watchlist</h2>
+  <div class="row">
+      <div class="column">
+          <div class="card">
+          <div id="watchlist"></div>
+          </div>
+      </div>
+   </div>
+</div>
+
+
+<div id="result"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="app.js" type="text/Javascript"></script>
+</body>
+</html>
+
